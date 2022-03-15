@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON Songlist</title>
+    <script src="index.js"></script>
+    <style>
+        input[type=text] {
+            width: 40%;
+            padding: 12px 20px;
+            margin-left: 30%;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 2vh;
+        }
+        
+        input[type=button] {
+            width: 56%;
+            background-color: #FCA311;
+            color: white;
+            padding: 14px 20px;
+            margin-left: 22%;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 3%;
+        }
+        
+        input[type=button]:hover {
+            background-color: hsl(37, 98%, 47%);
+            cursor: pointer;
+        }
+        
+        label {
+            font-family: sans-serif;
+            margin-top: 20vh;
+            margin-left: 30%;
+        }
+        
+        div {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 2%;
+        }
+        
+        h1,
+        h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        
+        h2 {
+            margin-bottom: 2%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Zipcode Lookup</h1>
+    <h2>Enter a US zip code to find out what city it corresponds to</h2>
+    <div id="output">&nbsp;</div>
+    <form name="form" action="" method="GET">
+
+        <label for="num1">Zip Code (US):</label><br>
+        <input type="text" id="zip" name="zip" value=""><br>
+        <br>
+        <input type="button" value="Submit" onClick="makeRequest(this.form)">
+    </form>
+
+</body>
+
+</html>
